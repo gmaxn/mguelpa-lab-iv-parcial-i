@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  /* border-radius: 5px; */
+  height: 100%;
+}
+html {
+  padding: 1px;
+  border: 1px solid red;
+  border-style: dashed;
+}
+body {
+  border: 1px solid black;
+}
+.visible-borders {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border-style: dashed;
+}

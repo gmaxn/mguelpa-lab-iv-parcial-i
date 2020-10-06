@@ -1,0 +1,20 @@
+<div id="form-wrapper">
+    <p id="title">Sign in</p>
+
+    <div id="principal-wrapper">
+        <input type="text" class="form-control" style="width:49%" placeholder="Usuario" [(ngModel)]="email" name="email" require>
+        <input type="password" class="form-control" style="width:49%" placeholder="Contraseña" [(ngModel)]="password" name="pass" required>
+    </div>
+
+    <div id="buttons-wrapper" *ngIf="!logeando">
+        <a class="btn btn-primary" (click)="MoverBarraDeProgreso()">Enviar</a>
+        <a class="btn btn-success" (click)="onAutoComplete()">Guest</a>
+        <a class="btn btn-danger" (click)="onClearInput()">Clear</a>
+    </div>
+    <div *ngIf="logeando" class="progress" style="margin-bottom: 10px;">
+        <div class="progress-bar progress-bar-info progress-bar-striped active" [class]="clase" role="progressbar"
+            aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" [style.width]="ProgresoDeAncho">
+            {{progresoMensaje}} - {{progreso}}%
+        </div>
+    </div>
+</div>

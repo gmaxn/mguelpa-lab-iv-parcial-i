@@ -1,0 +1,61 @@
+:host {
+  display: block;
+  text-align: center;
+}
+
+#form-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 25px;
+  background-color: rgb(62, 45, 95);
+  border: 3px solid black;
+}
+
+#title {
+  color: rgb(229, 229, 16);
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+  font-size: x-large;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 24px;
+}
+
+#principal-wrapper {
+  border: 1px solid rgb(30, 30, 30);
+  border-radius: 5px;
+  padding-top: 5px;
+  padding: 5px;
+  display: inline-flex;
+  flex-direction: row;
+  width: 400px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: rgb(46, 46, 46);
+}
+
+#buttons-wrapper {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: rgb(46, 46, 46);
+}
+
+#buttons-wrapper > a {
+  width: 32%;
+}
+
+#principal-wrapper > input[type="email"] {
+  margin-top: 5px;
+}
+

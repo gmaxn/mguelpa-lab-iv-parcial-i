@@ -1,0 +1,17 @@
+<div id="top-nav">
+    <div id="logo" class="visible-borders">
+        <a class="nav-link" class="brand" href="#"><span>GitHub</span><i
+                class="fab fa-github"></i></a>
+    </div>
+    <div id="nav-center-links">
+        <a class="nav-link" routerLink="/home">Home</a>
+        <a class="nav-link" routerLink="/not-found">About Me</a>
+        <a class="nav-link" routerLink="/signup">Register</a>
+        <a class="nav-link" routerLink="/accounts">Accounts</a>
+    </div>
+    <div id="nav-right-links">
+        <a *ngIf="!logged" class="nav-link" routerLink="/signin">Sign in</a>
+        <a *ngIf="logged" class="nav-link" routerLink="/home">Sign out</a>
+    </div>
+
+</div>

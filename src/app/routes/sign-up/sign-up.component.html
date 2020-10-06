@@ -1,0 +1,19 @@
+<div id="form-wrapper">
+    <p id="title">Crea tu cuenta</p>
+
+    <div id="principal-wrapper">
+        <input type="text" [(ngModel)]="firstname" class="form-control" style="width:47.7%;" type="text" placeholder="Nombre">
+        <input type="text" [(ngModel)]="lastname" class="form-control" style="width:47.7%;" type="text"  placeholder="Apellido">
+        <input type="text" [(ngModel)]="email" class="form-control" style="width:100%;" type="email" placeholder="Email">
+        <input type="number" [(ngModel)]="age" class="form-control" style="width:47.7%;" type="text" placeholder="Edad">
+        <select name="gender" [(ngModel)]="gender" class="form-control" style="width:47.7%;margin:5px">
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+        </select>
+        <!-- <input type="text" [(ngModel)]="gender" class="form-control" style="width:49%" type="text" name="" id="" placeholder="Apellido"> -->
+        <input [(ngModel)]="password" class="form-control" style="width:47.7%;" type="text" placeholder="Contraseña">
+        <input [(ngModel)]="password" class="form-control" style="width:47.7%;" type="password" placeholder="Confirmacion">
+    </div>
+
+    <a class="btn btn-primary" (click)="onRegister()">Enviar</a>
+</div>

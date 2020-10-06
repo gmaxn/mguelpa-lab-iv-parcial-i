@@ -1,0 +1,45 @@
+:host {
+  display: block;
+  text-align: center;
+}
+
+#form-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 25px;
+  background-color: rgb(62, 45, 95);
+  border: 3px solid black;
+  width:500px;
+}
+
+#title {
+  color: rgb(229, 229, 16);
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+  font-size: x-large;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 24px;
+}
+
+#principal-wrapper {
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  background-color: black;
+}
+
+
+#principal-wrapper>input{
+  margin: 5px;
+}
