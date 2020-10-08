@@ -1,0 +1,33 @@
+<style>
+    input[type="date"]:before {
+        content: attr(placeholder) !important;
+        color: grey;
+        margin-right: 0.5em;
+    }
+
+    input[type="date"]:focus:before,
+    input[type="date"]:valid:before {
+        content: "";
+    }
+</style>
+
+<div id="form-wrapper">
+    <p id="title">Alta Pelicula</p>
+    <div id="principal-wrapper">
+        <input type="text" class="form-control" type="text" placeholder="Nombre" [(ngModel)]="name">
+        <select name="tipo" class="form-control" style="margin:5px" [(ngModel)]="genre">
+            <option value="" selected disabled hidden>Seleccione Genero</option>
+            <option value="Terror">Terror</option>
+            <option value="Comedia">Comedia</option>
+            <option value="Amor">Amor</option>
+            <option value="Otros">Otros</option>
+        </select>
+        <input type="date" class="form-control" placeholder="Fecha de Estreno: " [(ngModel)]="releaseDate">
+        <input type="number" class="form-control" placeholder="Cantidad de Publico" [(ngModel)]="crowdQty">
+        <div class="custom-file" style="margin:5px">
+            <input type="file" class="custom-file-input" id="customFile" (change)="cambioArchivo($event)" type="file" id="fileUpload">
+            <label class="custom-file-label" for="customFile">Seleccionar imagen</label>
+        </div>
+    </div>
+    <a class="btn btn-primary" (click)="onSubmit()">Enviar</a>
+</div>

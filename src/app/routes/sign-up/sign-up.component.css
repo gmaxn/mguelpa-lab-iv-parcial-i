@@ -36,7 +36,8 @@
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 10px;
-  background-color: black;
+  background-color: rgb(92, 70, 138);;
+  border: 1px solid grey;
 }
 
 

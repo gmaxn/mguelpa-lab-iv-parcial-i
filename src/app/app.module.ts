@@ -17,6 +17,12 @@ import { TopNavComponent } from './shared/top-nav/top-nav.component';
 import { environment } from 'src/environments/environment';
 import { FormsModule } from '@angular/forms';
 import { AccountsComponent } from './routes/accounts/accounts.component';
+import { BienvenidoComponent } from './routes/bienvenido/bienvenido.component';
+import { PeliculaAltaComponent } from './routes/pelicula-alta/pelicula-alta.component';
+import { PeliculaListadoComponent } from './routes/pelicula-listado/pelicula-listado.component';
+import { MovieGridComponent } from './shared/movie-grid/movie-grid.component';
+import { MovieSearchComponent } from './routes/movie-search/movie-search.component';
+import { MovieDetailsComponent } from './shared/movie-details/movie-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +33,13 @@ import { AccountsComponent } from './routes/accounts/accounts.component';
     NotFoundComponent,
     ErrorComponent,
     TopNavComponent,
-    AccountsComponent
+    AccountsComponent,
+    BienvenidoComponent,
+    PeliculaAltaComponent,
+    PeliculaListadoComponent,
+    MovieGridComponent,
+    MovieSearchComponent,
+    MovieDetailsComponent
   ],
   imports: [
     BrowserModule,

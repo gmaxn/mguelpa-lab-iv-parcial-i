@@ -1,7 +1,9 @@
 <div id="form-wrapper">
+
     <p id="title">Crea tu cuenta</p>
 
     <div id="principal-wrapper">
+        
         <input type="text" [(ngModel)]="firstname" class="form-control" style="width:47.7%;" type="text" placeholder="Nombre">
         <input type="text" [(ngModel)]="lastname" class="form-control" style="width:47.7%;" type="text"  placeholder="Apellido">
         <input type="text" [(ngModel)]="email" class="form-control" style="width:100%;" type="email" placeholder="Email">
@@ -16,4 +18,5 @@
     </div>
 
     <a class="btn btn-primary" (click)="onRegister()">Enviar</a>
+
 </div>

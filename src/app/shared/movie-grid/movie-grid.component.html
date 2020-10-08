@@ -1,0 +1,39 @@
+<div id="movies-grid-wrapper" class="show-margins">
+
+    <div class="layout" id="search-bar">
+        <input type="text" [(ngModel)]='filterTerm' name="" id="search" placeholder='Filter by. . .'>
+
+        <button (click)='toggleImage()'>
+            {{showImage ? 'Hide' : 'Show'}} Image
+        </button>
+    </div>
+
+    <div class="layout" id="table-wrapper">
+        <table *ngIf='movies && movies.length'>
+
+            <thead>
+                <th *ngIf='showImage'>Image</th>
+                <th>Name</th>
+                <th>Genero</th>
+                <th>Fecha de Estreno</th>
+                <th>Publico</th>
+            </thead>
+
+            <tbody>
+                <tr *ngFor='let movie of movies' (click)="onSendMovies(movies)">
+                    <td *ngIf='showImage'>
+                        <img [src]='movie.imageUrl' [title]='movie.name'
+                            [style.width.px]='imageWidth' [style.margin.px]='imageMargin'>
+                    </td>
+                    <td>{{movie.name}}</td>
+                    <td>{{movie.genre}}</td>
+                    <td>{{movie.releaseDate}}</td>
+                    <td>{{movie.crowdQty}}</td>
+                </tr>
+            </tbody>
+
+            
+
+        </table>
+    </div>
+</div>
