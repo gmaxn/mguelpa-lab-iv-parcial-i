@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AccountsComponent } from './routes/accounts/accounts.component';
+import { AltaActorComponent } from './routes/alta-actor/alta-actor.component';
+import { CountriesListComponent } from './routes/countries-list/countries-list.component';
 import { ErrorComponent } from './routes/error/error.component';
 import { HomeComponent } from './routes/home/home.component';
 import { MovieSearchComponent } from './routes/movie-search/movie-search.component';
@@ -12,7 +14,7 @@ import { UserAccountComponent } from './routes/user-account/user-account.compone
 
 const routes: Routes = [
 
-  { path: '', component: HomeComponent },
+  { path: '', component: AltaActorComponent },
   { path: 'home', component: HomeComponent },
   { path: 'account', component: UserAccountComponent },
   { path: 'accounts', component: AccountsComponent },
@@ -20,7 +22,9 @@ const routes: Routes = [
   { path: 'signin', component: SignInComponent },
   { path: 'error', component: ErrorComponent },
   { path: 'pelicula/alta', component: PeliculaAltaComponent },
+  { path: 'actor/alta', component: AltaActorComponent },
   { path: 'busqueda', component: MovieSearchComponent },
+  { path: 'countries', component: CountriesListComponent},
   { path: '**', component: NotFoundComponent }
 ];
 

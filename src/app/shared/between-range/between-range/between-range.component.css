@@ -1,0 +1,28 @@
+
+
+
+.between-range-container {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: grey;
+
+
+}
+
+label {
+    background-color: blue;
+}
+
+.range-elements {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.range-elements>div>input{
+    width: 100px;
+    border-radius: 5px;
+}
+
+.padding-default {
+    padding:5px;
+}

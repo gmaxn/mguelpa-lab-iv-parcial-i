@@ -23,6 +23,12 @@ import { PeliculaListadoComponent } from './routes/pelicula-listado/pelicula-lis
 import { MovieGridComponent } from './shared/movie-grid/movie-grid.component';
 import { MovieSearchComponent } from './routes/movie-search/movie-search.component';
 import { MovieDetailsComponent } from './shared/movie-details/movie-details.component';
+import { CountriesListComponent } from './routes/countries-list/countries-list.component';
+import { CountriesGirdComponent } from './routes/countries-list/countries-gird/countries-gird.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MultiselectorDropdownComponent } from './shared/multiselector-dropdown/multiselector-dropdown.component';
+import { BetweenRangeComponent } from './shared/between-range/between-range/between-range.component';
+import { AltaActorComponent } from './routes/alta-actor/alta-actor.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,12 +45,18 @@ import { MovieDetailsComponent } from './shared/movie-details/movie-details.comp
     PeliculaListadoComponent,
     MovieGridComponent,
     MovieSearchComponent,
-    MovieDetailsComponent
+    MovieDetailsComponent,
+    CountriesListComponent,
+    CountriesGirdComponent,
+    MultiselectorDropdownComponent,
+    BetweenRangeComponent,
+    AltaActorComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [],

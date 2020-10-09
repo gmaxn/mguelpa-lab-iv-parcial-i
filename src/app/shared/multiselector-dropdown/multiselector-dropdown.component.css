@@ -1,0 +1,89 @@
+.control-container {
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    display: inline-flex;
+    padding: 5px;
+    background-color: grey;
+    height: 94px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.dropbtn {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    margin-right: 5px;
+    width:160px;
+    height: 100%;
+
+}
+.pill-container {
+    padding: 2px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    width: 232px;
+    display: inline-flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: whitesmoke;
+}
+.pill {
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    font-size: smaller;
+    display: inline-flex;
+    margin:2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    vertical-align: center;
+    font-family: consolas, 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: rgb(30,30,30);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.drop-label {
+    font-family: consolas, 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgb(30,30,30);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    width:100%;
+    padding: 5px;
+}
+label {
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding:2px;
+    display: inline;
+    margin-right: 2px;
+}

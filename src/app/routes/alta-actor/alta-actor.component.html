@@ -1,0 +1,35 @@
+<style>
+    input[type="date"]:before {
+        content: attr(placeholder) !important;
+        color: grey;
+        margin-right: 0.5em;
+    }
+
+    input[type="date"]:focus:before,
+    input[type="date"]:valid:before {
+        content: "";
+    }
+</style>
+
+<div id="form-wrapper">
+    <p id="title">Alta Actor</p>
+    <div id="principal-wrapper">
+        <input type="text" class="form-control" type="text" placeholder="Nombre" [(ngModel)]="firstname">
+        <input type="text" class="form-control" type="text" placeholder="Apellido" [(ngModel)]="lastname">
+        <input type="text" class="form-control" type="text" placeholder="Country" [(ngModel)]="selectedCountry.name" disabled>
+
+        <select name="tipo" class="form-control" style="margin:5px" [(ngModel)]="gender">
+            <option value="" selected disabled hidden>Seleccione Sexo</option>
+            <option value="Terror">Masculino</option>
+            <option value="Comedia">Femenino</option>
+        </select>
+        <input type="date" class="form-control" placeholder="Fecha de nacimiento: " [(ngModel)]="birthDate">
+        <div class="custom-file" style="margin:5px">
+            <input type="file" class="custom-file-input" id="customFile" (change)="cambioArchivo($event)" type="file" id="fileUpload">
+            <label class="custom-file-label" for="customFile">Seleccionar foto</label>
+        </div>
+    </div>
+    <app-countries-list (notifyCountry2)='onReceiveCountry($event)'></app-countries-list>
+    <a class="btn btn-primary" (click)="onSubmit()">Enviar</a>
+</div>
+

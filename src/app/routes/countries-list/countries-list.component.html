@@ -1,0 +1,21 @@
+<div id="component-wrapper">
+    <div id="countries-grid-wrapper-controls" class="show-margins" hidden>
+        <div class="layout" id="countries-grid-wrapper-controls2">
+            <app-between-range (notifyPopulationRange)='onReceiveRange($event)'></app-between-range>
+            <app-multiselector-dropdown (notifyRegions)='onReceiveRegions($event)'></app-multiselector-dropdown>
+            <button [(ngModel)]='showImage' class="go-button" (click)='onShowGrid()' id="go-button">
+                Go!
+            </button>
+        </div>
+
+        
+        
+    </div>
+    <app-countries-gird
+        [countries]="filteredCountries"
+        [maxPopulation]="maxPopulation"
+        [minPopulation]="minPopulation"
+        [regions]="regions" (notifyCountry)='onReceiveCountry($event)'></app-countries-gird>
+
+        <app-countries-details *ngIf="showDetail" [country]=country></app-countries-details>
+</div>

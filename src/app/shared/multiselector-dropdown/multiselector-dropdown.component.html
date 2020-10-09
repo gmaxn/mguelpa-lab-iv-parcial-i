@@ -1,0 +1,30 @@
+<div class="control-container">
+    <div class="dropdown">
+        <div class="dropbtn">
+            Select regions:
+
+        </div>
+        <div class="dropdown-content">
+            <div class="drop-label">Africa <input type="checkbox" name="Africa" id="" (change)='onCheck($event)'
+                    (change)='onSendRegions()'></div>
+            <div class="drop-label">Asia <input type="checkbox" name="Asia" id="" (change)='onCheck($event)'
+                    (change)='onSendRegions()'></div>
+            <div class="drop-label">Americas <input type="checkbox" name="Americas" id="" (change)='onCheck($event)'
+                    (change)='onSendRegions()'></div>
+            <div class="drop-label">Europe <input type="checkbox" name="Europe" id="" (change)='onCheck($event)'
+                    (change)='onSendRegions()'></div>
+            <div class="drop-label">North America <input type="checkbox" name="North Ameriaca" id=""
+                    (change)='onCheck($event)' (change)='onSendRegions()'></div>
+            <div class="drop-label">Oceania <input type="checkbox" name="Oceania" id="" (change)='onCheck($event)'
+                    (change)='onSendRegions()'></div>
+            <div class="drop-label">South America <input type="checkbox" name="South America" id=""
+                    (change)='onCheck($event)' (change)='onSendRegions()'></div>
+        </div>
+    </div>
+
+    <div>
+        <div class="pill-container">
+            <div class="pill" *ngFor='let pill of selectedPills'>{{pill}}</div>
+        </div>
+    </div>
+</div>
