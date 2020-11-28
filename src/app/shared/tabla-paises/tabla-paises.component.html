@@ -1,0 +1,45 @@
+<style>
+    :host {
+        border: 1px solid green;
+        border-style: dashed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #table-wrapper {
+        border: 1px solid red;
+        border-radius: 5px;
+        background-color: whitesmoke;
+        width: 200px;
+        padding: 5px;
+    }
+
+    img {
+        height: 25px;
+        width: 50px;
+    }
+
+    #table-wrapper>table, tbody, tr, td {
+        border: 1px solid black;
+        width:100%;
+    }
+
+    #table-wrapper>td {
+        padding: 10px;
+    }
+
+</style>
+
+
+<div id="table-wrapper">
+
+    <table>
+        <tbody>
+            <tr>
+                <td>Argentina</td>
+                <td><img src="https://restcountries.eu/data/arg.svg" alt="ARG"></td>
+            <tr>
+        </tbody>
+    </table>
+</div>

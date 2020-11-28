@@ -29,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MultiselectorDropdownComponent } from './shared/multiselector-dropdown/multiselector-dropdown.component';
 import { BetweenRangeComponent } from './shared/between-range/between-range/between-range.component';
 import { AltaActorComponent } from './routes/alta-actor/alta-actor.component';
+import { TablaPaisesComponent } from './shared/tabla-paises/tabla-paises.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +51,8 @@ import { AltaActorComponent } from './routes/alta-actor/alta-actor.component';
     CountriesGirdComponent,
     MultiselectorDropdownComponent,
     BetweenRangeComponent,
-    AltaActorComponent
+    AltaActorComponent,
+    TablaPaisesComponent
   ],
   imports: [
     BrowserModule,
